@@ -10,8 +10,8 @@ function Content() {
     if (video) {
       video.addEventListener("ended", () => {
         setTimeout(() => {
-          video.play(); // Restart video after delay
-        }, 3000); // Adjust delay (3000ms = 3 seconds)
+          video.play(); 
+        }, 3000); 
       });
     }
   }, []);

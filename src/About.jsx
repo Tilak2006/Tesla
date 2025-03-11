@@ -1,27 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./About.css";
+import bgImage from "./assets/image 1.png"; 
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="parent-container">
+    <div 
+      className="about-container"
+    >
       <motion.div 
         className="overlay"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        {/* Blur Animated Text */}
         <motion.h1
           className="blur-text"
           initial={{ filter: "blur(10px)", opacity: 0 }}
           animate={{ filter: "blur(0px)", opacity: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 1.1, ease: "easeOut" }}
         >
           ABOUT
         </motion.h1>
 
-        {/* Description with fade-in effect */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,6 +36,7 @@ const About = () => {
           Its long-range battery and Autopilot capabilities make it the future of sustainable transportation.
         </motion.p>
       </motion.div>
+    </div>
     </div>
   );
 };
