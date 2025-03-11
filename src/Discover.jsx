@@ -31,14 +31,16 @@ const Discover = () => {
 
           <div className="checkbox">
             <input type="checkbox" id="subscribe" />
-            <label htmlFor="subscribe">Learn about Energy Products</label>
+            <label htmlFor="subscribe">know more about our vehicles</label>
           </div>
 
           <p className="terms">
             By selecting “Submit” I agree to the <a href="#">terms and conditions</a> and allow contact.
           </p>
 
-          <button className="submit-btn">Submit</button>
+          
+  <button className="submit-btn">Submit</button>
+
         </form>
       </div>
 
