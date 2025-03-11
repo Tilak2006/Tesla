@@ -1,0 +1,84 @@
+.cars-container {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #121212; /* Dark Matte Background */
+}
+
+.cars-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cars-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    background: linear-gradient(145deg, #1e1e1e, #292929); /* Matte Effect */
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6), -4px -4px 10px rgba(255, 255, 255, 0.05);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.car-card:hover {
+    transform: scale(1.04);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.1);
+}
+
+.car-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-card:hover .car-image {
+    transform: scale(1.02);
+}
+
+.car-name {
+    font-size: 1.6rem;
+    margin: 12px 0;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.car-description {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+.order-now {
+    background: #ff3b3b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(255, 59, 59, 0.4);
+}
+
+.order-now:hover {
+    background: #e62e2e;
+    box-shadow: 0px 6px 12px rgba(255, 59, 59, 0.6);
+    transform: translateY(-2px);
+}
+
+.order-now:active {
+    transform: scale(0.95);
+}

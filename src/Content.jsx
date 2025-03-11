@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './Content.css';
-import VideoBG from './assets/VideoCBTfinal.mp4'; // Ensure the video exists
+import VideoBG from './assets/FinalFinal.mp4'; // Ensure the video exists
 
 function Content() {
   const videoRef = useRef(null);

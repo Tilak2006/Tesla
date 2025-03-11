@@ -6,6 +6,7 @@
     max-height: 100vh;
     object-fit: cover;
     position: absolute;
+    top: 30px;
     right:0;
     bottom:0;
     z-index: -10;

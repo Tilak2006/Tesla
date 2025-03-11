@@ -1,42 +1,37 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "./About.css";
-import bgImage from "./assets/image 1.png"; 
 
 const About = () => {
   return (
-    <div className="parent-container">
-    <div 
-      className="about-container"
-    >
-      <motion.div 
-        className="overlay"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
-        <motion.h1
-          className="blur-text"
-          initial={{ filter: "blur(10px)", opacity: 0 }}
-          animate={{ filter: "blur(0px)", opacity: 1 }}
-          transition={{ duration: 1.1, ease: "easeOut" }}
-        >
-          ABOUT
-        </motion.h1>
+    <div className="about-container">
+      <h1 className="about-title">About Us</h1>
+      <p className="about-description">
+        Welcome to <span className="brand-name">TESLA CYBERTRUCK</span>, your premier destination for luxury and high-performance vehicles. 
+        We bring you the latest and most exclusive cars, ensuring an unparalleled driving experience. 
+      </p>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
-        >
-          The Tesla Cybertruck is an all-electric pickup truck designed for durability, performance, and futuristic innovation. 
-          With an ultra-hard stainless steel exoskeleton and armored glass, it offers unmatched strength and resilience. 
-          Powered by advanced electric motors, it delivers exceptional speed, towing capacity, and off-road capability. 
-          Featuring a versatile cargo bed, adaptive air suspension, and a high-tech interior, the Cybertruck redefines utility and adventure. 
-          Its long-range battery and Autopilot capabilities make it the future of sustainable transportation.
-        </motion.p>
-      </motion.div>
-    </div>
+      <div className="about-content">
+        <div className="about-card">
+          <h2>Our Mission</h2>
+          <p>
+            To provide top-tier vehicles with cutting-edge technology, exceptional design, and unmatched performance.
+          </p>
+        </div>
+
+        <div className="about-card">
+          <h2>Why Choose Us?</h2>
+          <p>
+            We offer an exclusive selection of vehicles, premium customer service, and a passion for automotive excellence.
+          </p>
+        </div>
+
+        <div className="about-card">
+          <h2>Experience Luxury</h2>
+          <p>
+            From sleek sports cars to luxury sedans, our collection is crafted to elevate your driving lifestyle.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
