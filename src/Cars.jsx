@@ -66,6 +66,7 @@ const Cars = () => {
               className="order-now"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              onClick={() => window.location.href = "https://www.tesla.com/cybertruck/design#overview"}
             >
               Order Now
             </motion.button>
